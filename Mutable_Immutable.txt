@@ -1,0 +1,12 @@
+immutable: values are not changed, only the references
+eg: a=3
+b=3
+#both will have same id
+a=4
+#a will now have different id
+mutable (lists): values are changed
+li=[1,2,3,4]
+li2=li
+#li2 will now point to same reference as that of li and hence change in li2 will reflect in li and vice versa
+li2[3]=1
+li will also become [1,2,3,1] because reference is same and value is changed 
